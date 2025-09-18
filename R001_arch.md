@@ -2,7 +2,18 @@
 
 ## Executive Summary
 
-HexStrike AI v6.0 is an advanced AI-powered cybersecurity automation platform built on the Model Context Protocol (MCP) architecture. The system integrates 150+ professional security tools with 12+ autonomous AI agents to provide comprehensive penetration testing, vulnerability assessment, and security research capabilities.
+HexStrike AI v6.0 is an advanced AI-powered cybersecurity automation platform built on the Model Context Protocol (MCP) architecture. **At its core, this repository provides a comprehensive tool wrapper and MCP server that integrates 150+ professional security tools with intelligent AI-driven orchestration capabilities.**
+
+### What This Repository Actually Contains
+
+**Primary Components:**
+- **MCP Server** (`hexstrike_server.py`): FastAPI-based server that wraps 150+ security tools
+- **MCP Client** (`hexstrike_mcp.py`): Protocol bridge connecting AI agents to the tool server
+- **Tool Wrappers**: Comprehensive command-line tool integrations with intelligent parameter optimization
+- **AI Decision Engine**: Intelligent tool selection and parameter optimization system
+- **Workflow Managers**: Specialized automation for bug bounty, CTF, and penetration testing
+
+**This is NOT a standalone AI agent** - it's a **tool orchestration platform** that provides AI agents (Claude, GPT, Copilot) with access to professional security tools through the MCP protocol.
 
 ### Key Architectural Principles
 - **AI-First Design**: Autonomous decision-making with intelligent tool selection
